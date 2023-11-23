@@ -1,15 +1,14 @@
-#include <iostream>
+#include "main.hpp"
 using namespace std;
 
 int main()
 {
-	int n1, n2;
-	int N;
+	const int N = 10;
+	int array[N] = {25, 10, 15, 30, 35, 40, 45, 55, 20, 50};
 
-	cin >> n1 >> n2;
-	cin >> N;
-
-	/***************************************************
-	 * Code your program here
-	 **************************************************	*/
+	bubbleSort(array, N);
+	for (int v : array)
+		cout << v << "\t";
+	cout << endl;
+	// Sorted List :10      15      20      25      30      35      40      45      50      55
 }
